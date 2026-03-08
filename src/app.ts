@@ -1,11 +1,9 @@
 import { Elysia } from "elysia";
-import{ staticPlugin} from "@elysiajs/static";
-import userRoutes dari "./routes/user.route.ts";
-// import staticPlugin dari @elysiajs/static 
-// import userRoutes dari user.route.ts
+import { staticPlugin } from "@elysiajs/static";
+import { userRoutes } from "./routes/user.route";
 
 export const app = new Elysia()
- .use( // agar css dapat dipanggil lewat SSR 
+  .use(
     staticPlugin({
       assets: "public",
       prefix: "/"

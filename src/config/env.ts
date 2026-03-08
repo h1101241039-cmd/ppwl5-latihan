@@ -8,12 +8,13 @@
 ========================= */
 
 export const env = {
-    DB_FILE: process.env.DB_FILE || "database.sqlite",
-    PORT: Number(process.env.PORT) || 3000,
-    NODE_ENV: process.env.NODE_ENV || "development"
+  PORT: Number(process.env.PORT) || 3000,
+  NODE_ENV: process.env.NODE_ENV || "development",
+  DB_FILE: process.env.DB_FILE || "database.sqlite"
 };
 
-if (!process.env.DB_FILE)
-    console.warn("⚠ DB_FILE not set, using default database.sqlite");
+if (!process.env.DB_FILE) {
+  console.warn("⚠ DB_FILE not set, using default database.sqlite");
+}
 
 console.log("Running in:", env.NODE_ENV);

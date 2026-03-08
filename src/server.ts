@@ -1,8 +1,8 @@
 import { app } from "./app";
-import { env } from "./config/env";
 import { initDB } from "./config/db";
+import { env } from "./config/env";
 
-// panggil initDB
+initDB();
 
 app.listen(env.PORT);
 

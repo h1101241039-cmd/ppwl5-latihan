@@ -3,7 +3,6 @@ node_modules
 
 .env
 .database.sqlite
-
 # output
 out
 dist
